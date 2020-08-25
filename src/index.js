@@ -1,5 +1,5 @@
 import Web3 from 'web3';
-import Staking from './build/contracts/StakingToken.json';
+import Staking from '../build/contracts/StakingToken.json';
 
 
 let web3;
@@ -61,6 +61,8 @@ const initApp = () => {
   const poolResult = document.getElementById('pool-result');
   const percent = document.getElementById('percent');
   const percentResult = document.getElementById('percent-result');
+  const checkGrowth = document.getElementById('checkGrowth');
+  const checkGrowthResult = document.getElementById('checkGrowth-result');
   const withdraw = document.getElementById('withdraw');
   const withdrawResult = document.getElementById('withdraw-result');
   const share = document.getElementById('share');
@@ -234,6 +236,17 @@ const initApp = () => {
     })
     .catch(() => {
       getBonusResult.innerHTML = `error`;
+    });
+  });
+
+ checkGrowth.addEventListener('click', (e) => {
+    e.preventDefault();
+        staking.methods.checkCommunityGrowthPercent().send({from: accounts[0]})
+    .then(result => {
+      checkGrowthResult.innerHTML = `successful`;
+    })
+    .catch(() => {
+      checkGrowthResult.innerHTML = `error`;
     });
   });
 
