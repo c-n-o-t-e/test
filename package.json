@@ -2,6 +2,8 @@
   "name": "shill-project",
   "version": "1.0.0",
   "main": "truffle-config.js",
+  "private": true,
+  "homepage": "https://dev-cnote.github.io/test/",
   "scripts": {
     "start": "webpack-dev-server"
   },
