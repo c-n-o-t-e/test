@@ -1,0 +1,26 @@
+{
+  "name": "shill-project",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "description": "",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "ethereumjs-tx": "^2.1.2",
+    "path": "^0.12.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.2.11"
+  }
+}

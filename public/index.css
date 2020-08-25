@@ -1,0 +1,50 @@
+body {
+	text-align: center;
+	background-color: F5F4FC;
+  margin: 0;
+  font-family: 'Comfortaa'; 
+  font-size: 22px;
+}
+
+.pos {
+	display: flex;
+	justify-content:space-around;
+}
+
+.po {
+ align-items:left;
+}
+
+input {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: 'Comfortaa'; 
+  background-color:yellow;
+ }
+
+ button {
+  background-image: linear-gradient(black, red);
+  color: white;
+  width: 20%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Comfortaa'; 
+  font-weight: bolder;
+}
+
+button:hover {
+  background-image: linear-gradient(black, black);
+  color: white;
+  }
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 12px;
+}
